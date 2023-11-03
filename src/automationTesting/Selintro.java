@@ -25,6 +25,7 @@ WebDriver driver = new ChromeDriver();
 //getting the URL opened in the browser.
 driver.get("https://www.saucedemo.com");
 
+//To maximize
 driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 driver.findElement(By.id("user-name")).sendKeys("standard_user");
